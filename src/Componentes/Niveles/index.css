@@ -1,9 +1,8 @@
-.card{
+.niveles-container{
     background-color: #FFFF ;
     width: 100%;
     max-width: 1285px;
     height: 100%;
-    min-height: 750px;
     color: black;
     border-radius: 20px;
     display: flex;
@@ -11,4 +10,90 @@
     align-items: center;
     padding: 40px 45px;
     gap: 20px;
+}
+
+.niveles-container h1{
+    color: #6733a2;
+    font-family: "Poly";
+    font-size: 46px;
+    letter-spacing: 0;
+    margin: 0;
+}
+.card-niveles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 172, 113, 1) 0%,
+        rgba(255, 132, 80, 1) 100%
+      );
+      border-radius: 10px;
+      box-shadow: 0px 12px 20px #ff71714c, 0px 8px 16px #ff9f694c;
+      height: 330px;
+      width: 261px;
+}
+
+.card-niveles:nth-child(2){
+    background: linear-gradient(
+        0deg,
+        rgba(96, 87, 128, 1) 0%,
+        rgba(144, 154, 184, 1) 100%
+      );
+      border-radius: 10px;
+      box-shadow: 0px 12px 20px #67608833, 0px 8px 16px #67608833;
+      height: 330px;
+      width: 261px;
+}
+
+.card-niveles:last-child{
+    background: linear-gradient(
+        0deg,
+        rgba(2, 170, 176, 1) 0%,
+        rgba(0, 205, 172, 1) 100%
+      );
+      border-radius: 10px;
+      box-shadow: 0px 12px 20px #00cbac33, 0px 8px 16px #00ccac33;
+      height: 330px;
+      width: 261px;
+}
+
+.card-niveles:hover{
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
+.card-niveles img{
+    max-width: 200px;
+    max-height: 170px;
+}
+
+.card-niveles h2{
+    font-family: "Poly";
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 30px;
+    color: #FFF;
+}
+
+.card-niveles p{
+    font-family: "Poly";
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 30px;
+    color: #FFF;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.cards-container a{
+    text-decoration: none;
 }
